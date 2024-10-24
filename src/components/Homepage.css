@@ -1,0 +1,305 @@
+
+/* ================================body section=========================== */
+/* ------------------------------------------------------------------ */
+/* nav bar header */
+
+#nn.header-scrolled{
+    border: 1px solid  rgb(0, 0, 128);
+    background-color:rgba(40, 58, 90, 0.9);  
+    position: fixed;
+}
+#n1{
+    display: flex; 
+    padding: 10px;
+}
+#n2{
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top:4px;
+    left:100px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px blue;
+}
+ul{
+    list-style-type:none;
+    display: flex;
+}
+
+#li1,#li2{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:17px;
+    left:700px;
+    margin-right: 40px;
+    
+    
+    
+}
+
+#li1:hover,#li2:hover{
+    text-decoration: none;
+    color:aqua;
+   
+}
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* main section  */
+body{
+    background-color: rgb(0, 0, 128);
+}
+.sectionset{
+    
+    height:600px;
+    width: 100%;
+    position: fixed;
+    margin-top: 125px;
+}
+#sec-title{
+    
+    position:relative;
+    top:130px;
+    left:80px;
+
+}
+#h1{
+    font-size: 40px;
+    width:400px;
+    
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#h2{
+    width: 450px;
+    font-size: 20px;
+    color:rgb(153, 153, 255);
+    position: relative;
+    bottom: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sec-title,#sec-title2{
+    display:inline-block;
+}
+#sec-title2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#h5{
+    position: relative;
+    margin-left: 800px;
+    top: -90px;
+    height: 400px;
+    width:400px;
+    background-color: rgb(0, 0, 128) ;
+    animation-name: img;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    
+    animation-iteration-count: infinite;
+}
+
+@keyframes img{
+    0%{
+        transform: translateY(10px) ;
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/* media query */
+
+/* Base Styles (unchanged) */
+
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+    #n1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    #n2 {
+        left: 0; /* Center title */
+        font-size: 24px; /* Smaller font size */
+        text-align: center; /* Center text */
+    }
+    #li1, #li2 {
+        position: relative;
+        left: -20px; /* Center list items */
+        font-size: 18px; /* Smaller font size */
+        margin: 5px 5px; /* Add spacing between items */
+    }
+    #li1:hover,#li2:hover{
+        text-decoration: none;
+        color:aqua;
+       
+    }
+    #h1 {
+        font-size: 28px; /* Smaller title size */
+       
+        text-align: justify; /* Center title */
+        position: relative;
+        left: -50px;
+        line-height: 35px;
+        
+    }
+    #h2 {
+        position: relative;
+        left: -50px;
+       
+        font-size: 16px; /* Smaller subtitle size */
+        text-align: justify; /* Center subtitle */
+    }
+    #h5 {
+        width: 300px; /* Adjust width */
+        height: auto; /* Maintain aspect ratio */
+        margin-top:300px;
+        margin-left: 70px;
+    }
+    
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #n1 {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space out items */
+    }
+    #n2 {
+        left: 50px; /* Adjust position slightly */
+        font-size: 26px; /* Medium font size */
+    }
+    #li1, #li2 {
+        left: auto; /* Reset left positioning for better alignment */
+        margin-left: 20px; /* Add margin for spacing */
+        font-size: 19px; /* Medium font size */
+    }
+    #li1:hover,#li2:hover{
+        text-decoration: none;
+        color:aqua;
+       
+    }
+   
+    #h1 {
+        font-size: 32px; /* Medium title size */
+        text-align: justify;
+        position: relative;
+        margin-left: 100px;
+    }
+    #h2 {
+        position: relative;
+        margin-left: 100px;
+        font-size: 18px; /* Medium subtitle size */
+    }
+    #h5 {
+        width: 500px; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+        margin-top:350px;
+        margin-left: 95px;; /* Add spacing above image */
+    }
+
+    
+}
+
+
+@media (max-width: 1200px) {
+    #n1 {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space out items */
+    }
+    #n2 {
+        left: 50px; /* Adjust positioning */
+        font-size: 28px; /* Smaller font size */
+    }
+
+    #li1, #li2 {
+        left: auto; /* Reset left positioning for better alignment */
+        margin-left: 20px; /* Add margin for spacing */
+        font-size: 19px; /* Medium font size */
+    }
+   
+    #li1:hover,#li2:hover{
+        text-decoration: none;
+        color:aqua;
+       
+    }
+    #h1 {
+        font-size: 40px; /* Smaller font size */
+        text-align: justify;
+        width:90%;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    #h2 {
+        font-size: 25px; /* Smaller font size */
+        text-align: justify;
+        width:100%;
+    }
+    
+
+    #h5 {
+        width: 900px; /* Adjust width */
+        height: auto; /* Maintain aspect ratio */
+        position: relative;
+        margin-left: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    #n1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    #n2 {
+        left: 30px; /* Adjust positioning */
+        font-size: 28px; /* Smaller font size */
+    }
+
+  
+    #li1, #li2 {
+        left: auto; /* Reset left positioning for better alignment */
+        margin-left: 20px; /* Add margin for spacing */
+        font-size: 19px; /* Medium font size */
+    }
+    #li1:hover,#li2:hover{
+        text-decoration: none;
+        color:aqua;
+       
+    }
+    
+
+    #sec-title {
+        top: -10px; /* Adjust positioning for smaller screens */
+    }
+
+    #h1 {
+        font-size: 29px; /* Medium title size */
+        text-align: justify;
+        position: relative;
+        margin-left: 20px;
+    }
+    #h2 {
+        position: relative;
+        margin-left: 20px;
+        font-size: 18px; /* Medium subtitle size */
+    }
+
+    #h5 {
+        width: 80%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 130px; /* Add spacing above image */
+    }
+}
+
+

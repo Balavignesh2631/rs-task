@@ -1,0 +1,322 @@
+/* ------------------------------------------------------------------ */
+/* nav bar header */
+
+#student.header-scrolled{
+    border: 1px solid  rgb(0, 0, 128);
+    background-color:rgba(40, 58, 90, 0.9);  
+    position: fixed;
+}
+#stud1{
+    display: flex; 
+    padding: 10px;
+    
+}
+#stud2{
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top:4px;
+    left:100px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px blue;
+}
+ul{
+    list-style-type:none;
+    display: flex;
+}
+
+#studli1{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20px;
+    margin-left: 800px;
+}
+
+#studli1:hover{
+    text-decoration: none;
+    color:aqua
+}
+
+/* ========================================================== */
+/*  main section 1 */
+.stud-title{
+    position: relative;
+    margin-top: 80px;
+    height: 9000px;
+    width: 100%;
+    background-color:rgb(153, 255, 255);
+}
+
+#stud-item1{
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 40px;
+}
+#stud-item3{   
+    width: 250px;
+    position: relative;
+    margin-top:50px;
+    margin-left: 550px;
+}
+
+#stud-item4{
+    position: relative;
+    margin-left: 620px;
+    margin-top: -20px;
+    border: 4px solid rgb(4, 4, 56) ;
+    width: 100px;
+}
+#stud-item2{
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#stud-btn{
+    border:3px solid rgb(153, 153, 255);
+    background-color:rgb(89, 89, 149);
+    width: 170px;
+    height:50px;
+    border-radius: 30px;
+    position: relative;
+    top:3px;
+    left:570px;
+    
+}
+#stud-btn:hover{
+    background-color:rgb(153, 153, 255) ;
+}
+#add{
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007BFF;
+    color: rgb(4, 4, 56);
+}
+th{
+    text-shadow: 2px 2px 2px white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+th {
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* nav bar header */
+
+@media screen and (max-width: 1200px) {
+    #student.header-scrolled {
+        background-color: rgba(40, 58, 90, 0.8);
+    }
+
+    #stud1 {
+        padding: 10px;
+        flex-direction: row; /* Keep horizontal layout */
+    }
+
+    #stud2 {
+        font-size: 28px;
+        left: 80px;
+    }
+
+    #studli1 {
+        margin-left: auto; /* Align to right */
+        font-size: 23px;
+        top: 15px;
+        margin-left: 600px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #stud1 {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    #stud2 {
+        font-size: 28px;
+        left: 50px;
+        top:20px;
+    }
+
+    #studli1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 20px;
+        top: -23px;
+        left: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #student.header-scrolled {
+        background-color: rgba(40, 58, 90, 0.7);
+    }
+
+    #stud1 {
+        padding: 5px;
+    }
+
+    #stud2 {
+        font-size: 20px;
+        left: 20px;
+        top: 20px;
+    }
+
+    #studli1 {
+        font-size: 16px;
+       
+        left: 200px;
+        
+
+    }
+}
+
+/* ========================================================== */
+/* main section 1 */
+
+@media screen and (max-width: 1200px) {
+    .stud-title {
+        height: 3000px; /* Allow height to adjust based on content */
+        top:4px;
+    }
+
+    #stud-item1,
+    #stud-item2 {
+        font-size: 27px; /* Adjust font size */
+        top: 30px; /* Adjust positioning */
+    }
+
+    #stud-item3,
+    #stud-item4 {
+        margin-left: auto; /* Center items */
+        margin-right: auto; /* Center items */
+        display: block; /* Stack items */
+        width: auto; /* Allow items to take full width */
+    }
+
+    #stud-btn {
+        width: 160px; /* Adjust button width */
+        height: 45px; /* Adjust button height */
+        left: calc(50% - 80px); /* Center button */
+        
+    }
+    #add{
+        
+        position: relative;
+        bottom: 6px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .stud-title {
+        padding: 20px; /* Add padding for better touch targets */
+        top:20px;
+    }
+
+    #stud-item1,
+    #stud-item2 {
+        font-size: 20px; /* Further adjust font size */
+        top: 20px; /* Adjust positioning */
+    }
+
+    #stud-btn {
+        width: 140px; /* Further adjust button width */
+        height: 40px; /* Further adjust button height */
+        left: calc(50% - 70px); /* Center button */
+    }
+    #add{
+        
+        position: relative;
+        bottom: 6px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stud-title {
+        padding-top: 15px; 
+        padding-bottom: 15px;
+    }
+
+    #stud-item1,
+    #stud-item2 {
+        font-size: 16px; 
+        top: 10px; 
+    }
+
+    #stud-btn {
+        width: 120px; 
+        height: 40px; 
+        
+        
+    }
+    #add{
+        
+        position: relative;
+        bottom: 6px;
+        font-size: 20px;
+    }
+}
+
+/* Table Styles */
+
+@media screen and (max-width: 1200px) {
+   table { font-size: 14px; }
+}
+
+@media screen and (max-width: 992px) {
+   table { font-size: 12px; }
+   
+}
+
+@media screen and (max-width: 768px) {
+   table { 
+       overflow-x:auto; 
+       display:block; 
+       font-size:11px; 
+       
+   }
+   
+   th, td { padding:3px; } 
+   .container{
+    width: 100%;
+   }
+  
+}
